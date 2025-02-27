@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import pages.BasePage;
 
+@Listeners(ScreenshotListener.class)  // Listener burada eklendi!
 public class BaseTest {
     public TestContext testContext;
     protected BasePage basePage;
